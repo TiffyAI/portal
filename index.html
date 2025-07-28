@@ -27,13 +27,19 @@
 </head>
 <body>
 
-  <img id="enteringGif" src="https://tiffyai.github.io/Start/Entering.gif" alt="Entering Portal" />
+  <img
+    id="enteringGif"
+    src="https://tiffyai.github.io/Start/Entering.gif"
+    alt="Entering Portal"
+    onload="startRedirectTimer()"
+  />
 
   <script>
-    // ⏳ 4 seconds and then redirect
-    setTimeout(() => {
-      window.location.href = "/Alert";
-    }, 4000);
+    function startRedirectTimer() {
+      setTimeout(() => {
+        window.location.href = "/Alert";
+      }, 4000); // Wait 4s AFTER the gif loads
+    }
   </script>
 
 </body>
