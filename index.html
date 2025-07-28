@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>🚪 Entering the TiffyAI Portal</title>
+  <title>🚀 Entering TiffyAI Portal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <style>
     html, body {
@@ -17,29 +17,23 @@
       justify-content: center;
     }
 
-    #portalGif {
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: contain;
+    #enteringGif {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
       background-color: black;
     }
   </style>
 </head>
 <body>
 
-  <!-- 🔄 GIF plays once, full screen -->
-  <img id="portalGif" src="https://tiffyai.github.io/portal/Entering.gif" alt="Entering Portal" />
+  <img id="enteringGif" src="https://tiffyai.github.io/Start/Entering.gif" alt="Entering Portal" />
 
   <script>
-    const gif = document.getElementById("portalGif");
-
-    // Wait a little for image to load fully
-    gif.onload = () => {
-      // Approximate length of the GIF (adjust if needed)
-      setTimeout(() => {
-        window.location.href = "/Alert";
-      }, 6000); // ⏳ Set to the actual duration of Entering.gif
-    };
+    // ⏳ 4 seconds and then redirect
+    setTimeout(() => {
+      window.location.href = "/Alert";
+    }, 4000);
   </script>
 
 </body>
